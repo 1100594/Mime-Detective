@@ -37,12 +37,6 @@ namespace Mime_Detective.Benchmarks
                 .With(Platform.X64)
                 .With(Jit.RyuJit)
                 .WithId("NetCore2.0"));
-
-            Add(Job.Default.With(Runtime.Core)
-                .With(CsProjCoreToolchain.NetCoreApp21)
-                .With(Platform.X64)
-                .With(Jit.RyuJit)
-                .WithId("NetCore2.1"));
         }
     }
 
